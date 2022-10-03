@@ -8,6 +8,8 @@ import List from './pages/list/List';
 import { productInputs, userInputs } from './formSource';
 import './style/dark.scss';
 import { DarkModeContext } from './context/darkModeContext';
+import NotFound from './components/error/notFound';
+import Chart from './components/chart/Chart';
 function App() {
 	const { darkMode } = useContext(DarkModeContext);
 
@@ -37,6 +39,13 @@ function App() {
 								}
 							/>
 						</Route>
+						<Route
+							path='/state'
+							element={
+								<Chart title='this is State Status click me' aspect={3 / 1} />
+							}
+						/>
+						<Route path='*' element={<NotFound />} />
 					</Route>
 				</Routes>
 			</BrowserRouter>

@@ -13,6 +13,7 @@ import {
 	Tooltip,
 	Legend,
 } from 'recharts';
+import { useNavigate } from 'react-router-dom';
 
 const data = [
 	{
@@ -54,9 +55,13 @@ const data = [
 ];
 
 const Chart = ({ aspect, title }) => {
+	const navigate = useNavigate();
+
 	return (
 		<div className='chart'>
-			<div className='title'>{title}</div>
+			<div onClick={() => navigate('/')} className='title'>
+				{title}
+			</div>
 			<ResponsiveContainer width='100%' aspect={aspect}>
 				<ComposedChart
 					width={500}

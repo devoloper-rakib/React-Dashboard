@@ -8,6 +8,7 @@ import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutline
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
 import { DarkModeContext } from '../../context/darkModeContext';
+import { Link } from 'react-router-dom';
 // import { DarkModeContext } from '../../context/darkModeContext';
 
 const Navbar = () => {
@@ -48,11 +49,13 @@ const Navbar = () => {
 					</div>
 
 					<div className='item'>
-						<img
-							src='https://i.ibb.co/drBCYLn/profile-1.jpg'
-							alt='profile-1'
-							className='avatar'
-						/>
+						<Link to='/users/single' className='link'>
+							<img
+								src='https://i.ibb.co/drBCYLn/profile-1.jpg'
+								alt='profile-1'
+								className='avatar'
+							/>
+						</Link>
 					</div>
 				</div>
 			</div>

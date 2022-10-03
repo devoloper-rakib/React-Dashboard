@@ -29,10 +29,14 @@ const Sidebar = () => {
 			<div className='center'>
 				<ul>
 					<p className='title'>MAIN</p>
-					<li>
-						<DashboardIcon className='icon' />
-						<span>Dashboard</span>
-					</li>
+
+					<Link to='/fsdfd' className='link'>
+						<li>
+							<DashboardIcon className='icon' />
+							<span>Dashboard</span>
+						</li>
+					</Link>
+
 					<p className='title'>LISTS</p>
 
 					<Link to='/users' style={{ textDecoration: 'none' }}>
@@ -47,45 +51,67 @@ const Sidebar = () => {
 							<span>Products</span>
 						</li>
 					</Link>
-					<li>
-						<CreditCardIcon className='icon' />
-						<span>Orders</span>
-					</li>
-					<li>
-						<LocalShippingIcon className='icon' />
-						<span>Delivery</span>
-					</li>
+
+					<Link to='/fsdfd' className='link'>
+						<li>
+							<CreditCardIcon className='icon' />
+							<span>Orders</span>
+						</li>
+					</Link>
+
+					<Link to='/fsdfd' className='link'>
+						<li>
+							<LocalShippingIcon className='icon' />
+							<span>Delivery</span>
+						</li>
+					</Link>
 					<p className='title'>USEFUL</p>
 
-					<li>
-						<InsertChartOutlinedIcon className='icon' />
-						<span>Stats</span>
-					</li>
+					<Link to='/state' className='link'>
+						<li>
+							<InsertChartOutlinedIcon className='icon' />
+							<span>Stats</span>
+						</li>
+					</Link>
 
-					<li>
-						<CircleNotificationsIcon className='icon' />
-						<span>Notifications</span>
-					</li>
+					<Link to='/fsdfd' className='link'>
+						<li>
+							<CircleNotificationsIcon className='icon' />
+							<span>Notifications</span>
+						</li>
+					</Link>
+
 					<p className='title'>SERVICES</p>
 
-					<li>
-						<HealthAndSafetyIcon className='icon' />
-						<span>System Health</span>
-					</li>
-					<li>
-						<PsychologyAltIcon className='icon' />
-						<span>Logs</span>
-					</li>
-					<li>
-						<SettingsIcon className='icon' />
-						<span>Settings</span>
-					</li>
+					<Link to='/fsdfd' className='link'>
+						<li>
+							<HealthAndSafetyIcon className='icon' />
+							<span>System Health</span>
+						</li>
+					</Link>
+
+					<Link to='/fsdfd' className='link'>
+						<li>
+							<PsychologyAltIcon className='icon' />
+							<span>Logs</span>
+						</li>
+					</Link>
+
+					<Link to='/fsdfd' className='link'>
+						<li>
+							<SettingsIcon className='icon' />
+							<span>Settings</span>
+						</li>
+					</Link>
+
 					<p className='title'>USER</p>
 
-					<li>
-						<AccountCircleOutlinedIcon className='icon' />
-						<span>Profile</span>
-					</li>
+					<Link to='/users/single' className='link'>
+						<li>
+							<AccountCircleOutlinedIcon className='icon' />
+							<span>Profile</span>
+						</li>
+					</Link>
 					<li>
 						<LogoutOutlinedIcon className='icon' />
 						<span>LOG Out</span>
